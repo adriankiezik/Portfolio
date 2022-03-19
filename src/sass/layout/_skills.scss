@@ -1,0 +1,98 @@
+.skills {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &__column1 {
+    height: 100%;
+    padding-top: 40%;
+    padding-right: 10%;
+  }
+  &__column2 {
+    height: 100%;
+    padding-top: 35%;
+    padding-left: 10%;
+  }
+  &__title {
+    color: var(--primary-text);
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1.3em;
+  }
+  &__subtitle {
+    color: var(--primary-color);
+    font-size: 1.3em;
+  }
+  &__text {
+    color: var(--secondary-text-text);
+    font-size: 1.1em;
+    margin-top: 1em;
+  }
+}
+.grid {
+  display: flex;
+  margin-bottom: 5em;
+  flex-wrap: wrap;
+  &__title {
+    color: var(--primary-text);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+  }
+  &__label {
+    position: absolute;
+    font-size: 0.8em;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: default;
+    color: inherit;
+  }
+  &__item {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    &--html {
+      background-image: url("/src/assets/html5.svg");
+    }
+    &--css {
+      background-image: url("/src/assets/css3.svg");
+    }
+    &--sass {
+      background-image: url("/src/assets/sass.svg");
+    }
+    &--js {
+      background-image: url("/src/assets/javascript.svg");
+    }
+    &--java {
+      background-image: url("/src/assets/java.svg");
+    }
+    &--react {
+      background-image: url("/src/assets/react.svg");
+    }
+    &--redux {
+      background-image: url("/src/assets/redux.svg");
+    }
+    &--sql {
+      background-image: url("/src/assets/sql.svg");
+    }
+    &--mongodb {
+      background-image: url("/src/assets/mongodb.svg");
+    }
+    &--nodejs {
+      background-image: url("/src/assets/nodejs.svg");
+    }
+    &--git {
+      background-image: url("/src/assets/git.svg");
+    }
+    &--npm {
+      background-image: url("/src/assets/npm.svg");
+    }
+    &--webpack {
+      background-image: url("/src/assets/webpack.svg");
+    }
+  }
+}
