@@ -5,11 +5,15 @@
   grid-template-columns: 1fr 1fr;
   &__column1 {
     height: 100%;
-    padding: 30% 0;
+    display: grid;
+    align-content: center;
+    padding-bottom: 5em;
   }
   &__column2 {
-    padding-top: 18%;
     height: 100%;
+    display: grid;
+    align-content: center;
+    padding-bottom: 5em;
   }
   &__title {
     color: var(--primary-text);

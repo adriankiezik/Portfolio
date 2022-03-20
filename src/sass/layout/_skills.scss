@@ -5,13 +5,17 @@
   grid-template-columns: 1fr 1fr;
   &__column1 {
     height: 100%;
-    padding-top: 40%;
-    padding-right: 10%;
+    display: grid;
+    align-content: center;
+    padding-right: 2.5em;
+    padding-bottom: 5em;
   }
   &__column2 {
     height: 100%;
-    padding-top: 35%;
-    padding-left: 10%;
+    display: grid;
+    align-content: center;
+    padding-left: 2.5em;
+    padding-bottom: 5em;
   }
   &__title {
     color: var(--primary-text);
@@ -31,13 +35,13 @@
 }
 .grid {
   display: flex;
-  margin-bottom: 5em;
   flex-wrap: wrap;
   &__title {
     color: var(--primary-text);
     font-size: 1.5em;
     margin-bottom: 1em;
     margin-left: 1em;
+    margin-top: 2em;
   }
   &__label {
     position: absolute;
