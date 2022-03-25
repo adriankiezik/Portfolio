@@ -1,12 +1,48 @@
 /* Poppins font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   font-size: 100%;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #bababa;
 }
-h1, h2, h3 {
+h1,h2,h3,h4,h5,h6 {
   color: #fff9f9;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.6rem;
+}
+h6 {
+  font-size: 1.4rem;
+}
+* {
+  @include breakpoint-down(xl) {
+    font-size: 90%;
+  }
+  @include breakpoint-down(lg) {
+    font-size: 85%;
+  }
+  @include breakpoint-down(sm) {
+    font-size: 60%;
+  }
+}
+p,a {
+  font-size: 18px;
+  @include breakpoint-down(lg) {
+    font-size: 16px;
+  }
 }

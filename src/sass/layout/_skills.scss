@@ -3,12 +3,19 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 10% 0;
+  @include breakpoint-down(lg) {
+    grid-template-columns: 1fr;
+  }
   &__column1 {
     height: 100%;
     display: grid;
     align-content: center;
     padding-right: 2.5em;
     padding-bottom: 5em;
+    @include breakpoint-down(sm) {
+      padding-bottom: 10%;
+    }
   }
   &__column2 {
     height: 100%;
@@ -16,41 +23,54 @@
     align-content: center;
     padding-left: 2.5em;
     padding-bottom: 5em;
+    @include breakpoint-down(lg) {
+      height: fit-content;
+      padding-left: 0;
+    }
   }
   &__title {
     color: var(--primary-text);
-    font-size: 4em;
     font-weight: 700;
     line-height: 1.3em;
   }
   &__subtitle {
     color: var(--primary-color);
-    font-size: 1.3em;
+    margin-bottom: 1em;
+    @include breakpoint-down(sm) {
+      font-size: 16px;
+    }
   }
   &__text {
     color: var(--secondary-text-text);
-    font-size: 1.1em;
     margin-top: 1em;
   }
 }
 .grid {
   display: flex;
   flex-wrap: wrap;
+  @include breakpoint-down(md) {
+    justify-content: center;
+  }
+  @include breakpoint-down(sm) {
+    padding: 10em 0;
+  }
   &__title {
     color: var(--primary-text);
-    font-size: 1.5em;
     margin-bottom: 1em;
     margin-left: 1em;
     margin-top: 2em;
+    @include breakpoint-down(md) {
+      text-align: center;
+      margin-left: 0;
+    }
   }
   &__label {
     position: absolute;
-    font-size: 0.8em;
-    bottom: 10%;
+    font-size: 13px;
+    bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
     cursor: default;
-    color: inherit;
   }
   &__item {
     width: 100px;
@@ -59,6 +79,10 @@
     background-size: 45%;
     background-repeat: no-repeat;
     background-position: center 30%;
+    @include breakpoint-down(md) {
+      width: 80px;
+      height: 80px;
+    }
     &--html {
       background-image: url("/src/assets/html5.svg");
     }
@@ -70,9 +94,6 @@
     }
     &--js {
       background-image: url("/src/assets/javascript.svg");
-    }
-    &--java {
-      background-image: url("/src/assets/java.svg");
     }
     &--react {
       background-image: url("/src/assets/react.svg");
