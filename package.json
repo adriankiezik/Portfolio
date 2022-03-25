@@ -5,12 +5,14 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Adrian Kiezik",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
+    "gh-pages": "^3.2.3",
     "parcel": "^2.3.2"
   },
   "dependencies": {
