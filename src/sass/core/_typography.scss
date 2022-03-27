@@ -40,7 +40,7 @@ h6 {
     font-size: 60%;
   }
 }
-p,a {
+p,a,label {
   font-size: 18px;
   @include breakpoint-down(lg) {
     font-size: 16px;
