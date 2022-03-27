@@ -88,6 +88,9 @@
     &:focus {
       outline: 1px solid var(--primary-color);
     }
+    &:not(:placeholder-shown) {
+      border-bottom: 1px solid var(--primary-color);
+    }
   }
   &__message {
     background-color: #5f5f5f1a;
