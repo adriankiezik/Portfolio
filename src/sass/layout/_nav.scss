@@ -45,6 +45,7 @@
     top: 40px;
     right: 40px;
     z-index: 10;
+    cursor: pointer;
     filter: brightness(0) invert(1);
     @include breakpoint-up(md) {
       display: none;

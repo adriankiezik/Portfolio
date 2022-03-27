@@ -1,11 +1,11 @@
 .header {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 100px);
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   @include breakpoint-down(md) {
     grid-template-columns: 1fr;
-    grid-template-rows: 1.5fr 1fr;
+    transform: translateY(-100px);
   }
   &__column1 {
     height: 100%;
@@ -19,8 +19,7 @@
     align-content: center;
     padding: 5em 0;
     @include breakpoint-down(md) {
-      display: flex;
-      justify-content: center;
+      display: none;
     }
   }
   &__title {
@@ -66,9 +65,6 @@
     width: 60px;
     filter: brightness(0) invert(1);
     transition: all 0.5s;
-    @include breakpoint-down(md) {
-      display: none;
-    }
   }
   &__fadeOut {
     opacity: 0;
