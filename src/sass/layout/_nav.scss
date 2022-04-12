@@ -10,12 +10,17 @@
     justify-content: start;
     padding-left: 10%;
   }
+  @include breakpoint-down(md) {
+    justify-content: center;
+    padding-left: 0;
+    gap: 5em;
+  }
+  @include breakpoint-down(sm) {
+    gap: 5rem;
+  }
   &__link {
     text-decoration: none;
     transition: color 0.2s;
-    @include breakpoint-down(md) {
-      display: none;
-    }
     &:hover {
       color: var(--primary-text);
     }
@@ -36,18 +41,6 @@
       border: 1px solid var(--primary-color);
     }
     @include breakpoint-down(md) {
-      display: none;
-    }
-  }
-  &__mobile-menu {
-    position: fixed;
-    width: 30px;
-    top: 40px;
-    right: 40px;
-    z-index: 10;
-    cursor: pointer;
-    filter: brightness(0) invert(1);
-    @include breakpoint-up(md) {
       display: none;
     }
   }
